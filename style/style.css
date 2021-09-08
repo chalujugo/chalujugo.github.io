@@ -33,7 +33,9 @@ html {
 }
 body {
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
+
   background: "black";
   color: var(--clr-text);
   margin: 0;
@@ -385,19 +387,19 @@ header {
   display: inline-block;
   max-width: 800px;
   overflow: hidden;
-  padding: 10px;
+  padding: 0px;
   margin-bottom: 1em;
 }
 
 .portfolio p {
-  padding: 0px 20px 40px 20px;
+  padding: 0px 0px 40px 20px;
   font-size: 0.9em;
 }
 
 footer {
   display: flex;
+  overflow: hidden;
   background-color: var(--clr-accent);
-  width: 100vw !important;
 }
 
 footer .footer_icon {
@@ -418,7 +420,6 @@ footer .social_list_item li {
   display: inline;
   background-color: #303030;
   list-style: none;
-  width: 100px;
   margin-right: 0px;
   text-align: center;
 }
@@ -426,6 +427,4 @@ footer .social_list_item li {
 ul > li {
   display: inline-block;
   zoom: 1;
-  *display: inline;
-  padding-right: 20px;
 }
