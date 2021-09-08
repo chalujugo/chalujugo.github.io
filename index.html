@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chalu's UFO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="navigation">
+                <ul class = "nav_list">
+                    <li class = "nav_item"><a href="#home" class ="nav_link">Home</a></li>
+                    <li class = "nav_item"><a href="#about" class ="nav_link">About Me</a></li>
+                    <li class = "nav_item"><a href="#experiences" class ="nav_link">Experience</a></li>
+                    <li class = "nav_item"><a href="#work" class ="nav_link">Projects</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <article class="scroller">
+        <!--- Introduction -->
+        <section class="intro" id = "home">
+            <h1 class="section_title section_title-intro">
+                Hi! I'm<br> <strong>Chalu</strong>
+                </h1>
+                <!---
+            <p class = "section_subtitle section_subtitle-intro">
+                computer science and statistics student
+            </p>-->
+            <img src="img/me.png" alt = "a drawing of Chalu" class="intro-image">
+        </section>
+
+
+        <!--- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section_title section_title-about">A bit about me!</h2>
+            <p class="section_subtitle section_subtitle-about"></p>
+            
+            <div class="about-me_body">
+                <p>i'm a computer science and statistics student with an interest in software development, data science, and UX/UI design. 
+                    i'm from the philippines and have worked in freelance graphic design and illustration, as well as working as a creative intern for
+                    an ad agency in my gap year. i finished the last two years of high school in malaysia before moving to new zealand for university.
+                    i currently work as a resident adviser at the university of auckland, and i am a microsoft student partner for the data science stream
+                    of the microsoft student accelerator program.
+                    <p>i love playing guitar, muay thai, drawing, making and drinking coffee, and binge watching tv shows. the x files is my favorite
+                    show, and i kind of believe in aliens.</p>
+                </p>
+                <!--image,maybe?-->    
+            </div>
+            <a href="#experiences" class = "btn" style="margin-top:30px;">my experience</a>
+        </section>
+
+        <!--- Experience -->
+        <section class="my-experiences" id ="experiences">
+            <h2 class = "section_title section_title-experiences">
+                Experience
+            </h2>
+
+            <div class="experiences">
+                <div class="experience">
+                    <h3>Academic</h3>
+                    <p>a penultimate year computer science and statistic student
+                        in the univeresity of auckland also undertaking software development and data analysis modules
+                    </p>
+                </div> <!--- studies --->
+
+                <div class="experience">
+                    <h3>Work</h3>
+                    <p>currently a resident adviser at the university of auckland. i have previous experience as a creative intern at mullenlowe
+                        and as a summer intern at KPMG lighthouse
+                    </p>
+                </div> <!--- hobbies --->
+
+                <div class="experience">
+                    <h3>Volunteer</h3>
+                    <p>a microsoft student partner working in the data science stream of the microsoft student
+                        accelerator program.
+                    </p>
+                </div> <!--- more! --->
+                <a href="#work" class = "btn">see my projects</a>
+
+            </div>
+        </section>
+
+        <!--- Projects -->
+        <section class="my-work" id = "work">
+            <h2 class= "section_title">My art</h2>
+            
+            <p class="section_subtitle">i share a lot of my art on <a href="https://instagram.com/chalu.jpg">my instagram</a>, but here are a few pieces i particularly like!</p>
+            <p></p>
+            <div class="portfolio">
+  
+                <!--- Portfolio item-->
+                <img src="img/full-comic.jpg" class="project_img">
+                <p>A vintage-style comic influenced by a poster I saw while in Portugal: “All feelings are valid. Every single one.” It delivers the message that being emotional is not a negative trait and we should not be afraid to express our feelings. The text aspect of comic strips as well as my literal interpretation of each part of the saying allowed me to create artwork that directly states its own message.</p>
+
+                <!--- Portfolio item-->
+                    <img src="img/full-records.JPG" class="project_img">
+                <p>A faux music record cover project inspired by my visit to a vinyl record store where I noticed how much a cover design can say about an album, and how much meaning the lyrics in that album can convey. I chose real songs for the back of the cover with titles I felt described the symptoms and manifestations of each disorder. The playful designs and bright colors eliminate the stigma that is normally attached to mental disorders.</p>
+                <!--- Portfolio item-->
+                    <img src="img/hands.png" class="project_img">
+                <p>A triptych with hands that I worked on to practice drawing hands and shadows. Inspired by celestial and mystical aesthetics, each hand has a different "theme" with different surroundings in each illustration.</p>
+                <!--- Portfolio item-->
+                    <img src="img/clothes-study.png" class="project_img">
+                <p>A clothing/pose study I did to work on illustrationg how clothes fall on bodies. Two of the three are <s>slightly</s> heavily influenced by Mulder and Scully from the X-Files in a modern-day setting (hence, the FBI jackets)</p>
+                
+                <!--- more! --->
+                <a href="https://instagram.com/chalu.jpg" class = "btn">see more</a>
+
+            </div>
+
+        </section>
+    </article>
+        <!--- Footer -->
+        <footer>
+            
+            <ul class="social-list">
+                <li class="social-list_item"><a
+                    href="mailto:chalujugo@gmail.com"><img src="img/icons/mail.png" class = "footer_icon"></a></li>
+                <li class="social-list_item"><a
+                    href="https://github.com/chalujugo/"><img src="img/icons/git.png" class = "footer_icon"></a></li>
+                <li class="social-list_item"><a 
+                    href="https://linkedin.com/in/chalujugo"><img src="img/icons/linkedin.png" class = "footer_icon"></a></li>
+                <li class="social-list_item"><a 
+                    href="https://instagram.com/chalu.jpg"><img src="img/icons/ig.png" class = "footer_icon"></a></li>
+                <li class="social-list_item"><a 
+                    href="https://facebook.com/chalujugo"><img src="img/icons/fb.png" class = "footer_icon"></a></li>
+
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
