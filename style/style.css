@@ -303,6 +303,19 @@ header {
   }
 }
 
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: scale(10);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 .my-experiences {
   height: auto !important;
   background-color: var(--clr-bg);
@@ -462,6 +475,24 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.project a {
+  color: white;
+}
+
+.project a::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 1px;
+  margin: 0.25em;
+  margin: 0.5em auto 1em;
+  background-color: white;
+}
+
+.project a:hover {
+  color: var(--clr-accent);
 }
 
 .languages {
