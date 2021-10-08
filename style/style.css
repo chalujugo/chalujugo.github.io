@@ -80,7 +80,7 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: #742a40;
   -webkit-transition: color 1000ms ease-in-out;
   -ms-transition: color 1000ms ease-in-out;
   transition: color 1000ms ease-in-out;
