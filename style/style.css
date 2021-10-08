@@ -395,14 +395,18 @@ header {
 }
 
 .section_title-projects {
-  position: block;
+  width: 100%;
   color: var(--clr-accent);
   text-shadow: 0 0 2px var(--clr-accent), -4px 5px 0 #000, -7px 11px 0 #747474;
 }
 
 .my-projects {
-  display: inline-block;
   height: auto !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   background-color: var(--clr-bg);
   color: var(--clr-bg);
   background-image: url(../img/projects.jpg);
@@ -412,11 +416,14 @@ header {
 }
 
 .projects {
+  height: auto !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  left: 10%;
-  max-width: 80%;
-  margin-top: auto;
-  margin-bottom: auto;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
   padding: 30px;
 }
@@ -442,11 +449,19 @@ header {
 
 .project {
   float: left;
+  position: inline-block;
   padding: 50px;
   margin-left: 20px;
   min-width: 500px;
   width: 40%;
   margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .project {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .languages {
