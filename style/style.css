@@ -366,7 +366,7 @@ header {
 
 .about-me {
   display: block !important;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: var(--clr-bg);
   color: var(--clr-text);
