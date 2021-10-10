@@ -115,11 +115,11 @@ a:hover {
 }
 
 #home {
-  padding: 8em;
+  padding: 4em 6em 6em 6em;
 }
 
 section {
-  height: 100vh;
+  height: auto !important;
   width: 100%;
   padding: 3.5em 2em;
 }
@@ -268,8 +268,14 @@ header {
   max-width: 150px;
 }
 
+.intro {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
 @media (min-width: 600px) {
-  .intro {
+  .intro-body {
     display: grid;
     width: min-content;
     margin: 0 auto;
@@ -319,16 +325,13 @@ header {
 
 .my-experiences {
   height: auto !important;
+  display: block !important;
   background-color: var(--clr-bg);
   color: var(--clr-bg);
   background-image: url(../img/bg.png);
   background-size: cover;
   text-align: center;
   padding-bottom: 3em;
-}
-
-.experiences {
-  margin-bottom: 1em;
 }
 
 .section_title-experiences {
@@ -362,18 +365,19 @@ header {
 }
 
 .about-me {
-  height: 100vh !important;
+  display: block !important;
+  width: 100vw;
+  min-height: 100vh;
   background-color: var(--clr-bg);
   color: var(--clr-text);
   background-size: cover;
   text-align: center;
   padding-bottom: 3em;
-  max-width: 60%;
-  margin: 0 auto;
 }
 
 .about-me_body {
-  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .section_title-about::after {
