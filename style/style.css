@@ -419,6 +419,7 @@ header {
 }
 
 .my-projects {
+  width: 100%;
   height: auto !important;
   display: flex;
   flex-wrap: wrap;
