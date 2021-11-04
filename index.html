@@ -10,8 +10,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
         <link rel="stylesheet" href="style/style.css" type="text/css">
+
+        <script src="jquery-3.5.1.min.js"></script>
+
 
     </head>
     <body>
@@ -29,7 +31,8 @@
                     <li class = "nav_item"><a href="#home" class ="nav_link">Home</a></li>
                     <li class = "nav_item"><a href="#about" class ="nav_link">About Me</a></li>
                     <li class = "nav_item"><a href="#experiences" class ="nav_link">Experience</a></li>
-                    <li class = "nav_item"><a href="#work" class ="nav_link">Projects</a></li>
+                    <li class = "nav_item"><a href="#work" class ="nav_link">Art</a></li>
+                    <li class = "nav_item"><a href="#proj" class ="nav_link">Projects</a></li>
 
                 </ul>
             </nav>
@@ -60,10 +63,10 @@
             <p class="section_subtitle section_subtitle-about"></p>
             
             <div class="about-me_body">
-                <p>i'm chalu (pronounced 'chuhloo') and i'm a 22 year old penultimate year computer science and statistics student in auckland, new zealand. i'm very keen on learning more about the tech industry and i have a strong interest in software development, data science, UX/UI design, web design, and iOS app development.
+                <p>i'm chalu, and i'm a 22 year old penultimate year computer science and statistics student in auckland, new zealand. i'm very keen on learning more about the tech industry and i have a strong interest in software development, data science, UX/UI design, web design, and iOS app development.
                 <p> i'm from the philippines and have worked in freelance graphic design and illustration, as well as working as a creative intern for ad agency in my gap year. i finished the last two years of high school in malaysia before moving to new zealand for university. i love digital art and while i'm studying something completely different, i still draw whenever i can and am constantly trying to develop my skills!
         
-                <p>i love playing guitar, muay thai, drawing, running, reading books, making and drinking coffee, and binge watching tv shows. the x files is my favorite show, and i kind of believe in aliens.</p>
+                <p>i love muay thai, drawing, playing guitar, running, reading books, making and drinking coffee, and binge watching tv shows. the x files is my favorite show, and i kind of believe in aliens.</p>
                 </p>
                 
             <a href="#experiences" class = "btn" style="margin-top:30px;">my experience</a>   
@@ -140,61 +143,60 @@
             
             <p></p>
             <div class="projects">
-  
+                
+                
                 <!--- Project -->
                 <div class="project">
-                    <h3>Get Vaxxed</h3>
+                    <h3>Spill The Beans</h3>
                     <p></p>
-                    <button id='modal_btn'><img src="img/getvaxxed.jpg" class = "project-img"></button>
+                    <img src="https://media.istockphoto.com/vectors/yellow-warning-sign-work-in-progress-background-vector-id1253437590?k=20&m=1253437590&s=612x612&w=0&h=W9zi5B52GGdDRxEQQdjIGCcX2Sg1jktQSOARNmDTlEg=" class = "project-img">
                     <div class="languages">
-                        <p class="language">Swift</p>
-                        </div>                    
-                        <i>(Click image for more information)</i>
-                        <br>Simple space-invader-type game, with a twist! In line with the COVID vaccination campaign, I made a simple game where you need to move the syringe and shoot doses of COVID vaccines at the many Mr. Ronas coming your way! 
-                    </div>
-
-                    <!-- Modal content -->
-                    <div id="myModal" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <span class="close">&times;</span>
-                            <h3>"Get Vaxxed"</h3>
-                          </div>
-                          <div class="modal-body">
-                              <p><b>How to play:</b></p>
-                              <li>You have 5 lives!</li>
-                              <li>For every COVID-19 virus you successfully eliminate with a vaccine, <b>you earn 1 point</b></li>
-                              <li>For every virus that infects you (you miss and it passes you), <b>you lose a life</b></li>
-                              <li>Drag the syringe to move left and right</li>
-                              <li>Tap to shoot!</li>
-                              <p><b>Preview of the game:</b></p>
-                              <img src="img/getvaxxed.gif">
-                          </div>
-                        </div>
-                      
-                      </div>
-
-                <!--- Project -->
-                <div class="project">
-                    <h3>GoodBooks</h3>
-                    <p></p>
-                    <img src="https://media.istockphoto.com/vectors/yellow-warning-sign-work-in-progress-background-vector-id1253437873?k=20&m=1253437873&s=612x612&w=0&h=S0hzCYCgPCufkdZaHlCDTCu_LP066lD99njJm8RuPgg=" class = "project-img">
-                    <div class="languages">
-                        <p class="language">Python Flask</p>
+                        <p class="language">Django</p>
+                        <p class="language">Bootstrap 5</p>
                         <p class="language">HTML/CSS</p>
+
                         </div>                    
-                        <p>A Flask app made for COMPSCI 235: Software Development Methodologies. Uses Jinja2 for templating. This is a web app that pretty much emulates GoodReads! Users can register, login, save books to a personal library, and leave reviews.
+                        <p>A Django social networking site for Coffee enthusiasts. Users can create profiles to share their daily grind, review coffee drinks/beans/machines to <i>spill the beans</i> regarding their latest finds and new favorites.
                     </p>
                 </div>
+
+            <!-- Project -->
+            <div class="project">
+            <a href="getvaxxed.html">
+                <h3>Get Vaxxed</h3>
+            </a>
+            <!-- Button trigger modal -->
+                <img src="img/getvaxxed.jpg" class = "project-img">
+                <div class="languages">
+                    <p class="language">Swift</p>
+                    </div>                    
+                    <br>Simple space-invader-type game, with a twist! In line with the COVID vaccination campaign, I made a simple game where you need to move the syringe and shoot doses of COVID vaccines at the many Mr. Ronas coming your way! 
+                </div>
+
+
+                      
+            <!-- Project -->
+            <div class="project">
+                <a href="goodbooks.html">
+                <h3>GoodBooks</h3>
+                </a>
+                    <img src="img/goodbooks.png" class = "project-img">
+                        <div class="languages">
+                            <p class="language">Python Flask</p>
+                            <p class="language">Jinja2</p>
+                            <p class="language">HTML/CSS</p>
+                            </div>                    
+                            <br>A Flask app made for COMPSCI 235: Software Development Methodologies. Uses Jinja2 for templating. This is a web app that pretty much emulates GoodReads. Users can register, login, save books to a personal library, and leave reviews.
+                            </div>
+
+        
                 <!--- Project -->
                 <div class="project">
                     <a href="https://github.com/chalujugo/Ball-Jump" target="_blank"> 
                     <h3>Ball Jump ⧉</h3>
                     </a>
                     <p></p>
-                    <img src="img/balljump.png" style="width:70%" class = "project-img">
+                    <img src="img/balljump.png" class = "project-img">
                     <div class="languages">
                         <p class="language">Python</p>
                         <p class="language">PyGame</p>
